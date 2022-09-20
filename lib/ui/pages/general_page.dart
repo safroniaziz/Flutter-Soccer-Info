@@ -23,7 +23,7 @@ class GeneralPage extends StatelessWidget {
         Container(color: Colors.white),
         SafeArea(
             child: Container(
-          color: backColor ?? "FAFAFC".toColor(),
+          color: backColor ?? Colors.white,
         )),
         SafeArea(
           child: ListView(
@@ -31,12 +31,12 @@ class GeneralPage extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                      margin: EdgeInsets.only(bottom: defaultMargin),
-                      padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                      width: double.infinity,
-                      height: 100,
-                      color: Colors.white,
-                      child: Row(children: [
+                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+                    width: double.infinity,
+                    height: 100,
+                    color: Colors.white,
+                    child: Row(
+                      children: [
                         onBackButtonPressed != null
                             ? Container(
                                 width: 24,
@@ -49,22 +49,30 @@ class GeneralPage extends StatelessWidget {
                               )
                             : SizedBox(),
                         Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                title,
-                                style: GoogleFonts.poppins(
-                                    fontSize: 22, fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                subtitle,
-                                style: GoogleFonts.poppins(
-                                    color: "8D92A3".toColor(),
-                                    fontWeight: FontWeight.w300),
-                              )
-                            ])
-                      ])),
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              title,
+                              style: GoogleFonts.poppins(
+                                  fontSize: 22, fontWeight: FontWeight.w500),
+                            ),
+                            Text(
+                              subtitle,
+                              style: GoogleFonts.poppins(
+                                  color: "8D92A3".toColor(),
+                                  fontWeight: FontWeight.w300),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: defaultMargin,
+                    width: double.infinity,
+                    color: "FAFAFC".toColor(),
+                  ),
                   child ?? SizedBox(),
                 ],
               ),

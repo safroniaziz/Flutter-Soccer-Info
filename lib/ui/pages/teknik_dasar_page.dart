@@ -9,7 +9,7 @@ class TeknikDasarPage extends StatelessWidget {
   final String text3 =
       "\t\t\t\t\t\t\t Keterampilan merupakan kemampuan untuk membuat hasil akhir dengan kepastian yang maksimum, energy, dan waktu yang minimum. Dengan demikian Schmidt & Lee (2014) menyimpulkan; Thus, understanding skills involves optimizing and balancing several skill aspects that are important to different extents in different settings. In sum, skills generally involve achieving some well- defined environmental goal by (1) maximizing the certainty of goal achievement, (2) minimizing the physical- and mental-energy costs of performance, (3) and minimizing the time used. Artinya dengan demikian, pemahaman keterampilan melibatkan mengoptimalkan dan menyeimbangkan beberapa aspek keterampilan yang penting untuk luasan yang berbeda dalam pengaturan yang berbeda. Keterampilan umumnya melibatkan pencapaian beberapa tujuan lingkungan dengan baik didefinisikan oleh (1) memaksimalkan kepastian pencapaian tujuan, (2) meminimalkan fisik, mental, dan energi kinerja, (3) dan meminimalkan waktu yang digunakan. Sedangkan keterampilan gerak merupakan elemen yang sangat penting dalam aktivitas olahraga.";
   final String text4 =
-      "Keterampilan gerak merupakan perwujudan dari kualitas koordinasi dan kontrol tubuh dalam melakukan gerak. Menguasai keterampilan dasar bermain sepak bola yaitu dengan cara memerintahkan badan sendiri dan memerintah bola dengan kaki, dengan tungkai, dengan kepala, dan dengan badan kecuali lengan. Semua itu dapat dilihat dari proses pembinaan usia muda agar dapat memaksimalkan perolehan suatu prestasi yang berjenjang dan berkelanjutan agar SDM berkualitas dalam bidang pembangunan dapat berjalan dengan baik.";
+      "\t\t\t\t\t\t\t Keterampilan gerak merupakan perwujudan dari kualitas koordinasi dan kontrol tubuh dalam melakukan gerak. Menguasai keterampilan dasar bermain sepak bola yaitu dengan cara memerintahkan badan sendiri dan memerintah bola dengan kaki, dengan tungkai, dengan kepala, dan dengan badan kecuali lengan. Semua itu dapat dilihat dari proses pembinaan usia muda agar dapat memaksimalkan perolehan suatu prestasi yang berjenjang dan berkelanjutan agar SDM berkualitas dalam bidang pembangunan dapat berjalan dengan baik.";
   final String text5 =
       "\t\t\t\t\t\t\t Menurut Luxbacher (2008) pertandingan sepak bola dimainkan oleh dua tim yang masing-masing beranggotakan 11 orang. Masing-masing tim mempertahankan gawang dan berusaha menjebol gawang lawan. Permainan boleh dilakukan dengan seluruh bagian badan kecuali dengan ke dua lengan (tangan). Hampir seluruh permainan dilakukan dengan keterampilan kaki, kecuali penjaga gawang dalam memainkan bola bebas menggunakan anggota badannya, dengan kaki maupun tangannya. Perkembangan sepak bola modern, teknik, kondisi fisik, dan pengembangan taktik dipelajari benar-benar secara mendalam dan cermat secara ilmiah. Teknik dalam olahraga merupakan kemampuan untuk melaksanakan gerakan secara cepat, tepat, dan harmonis. Teknik dalam olahraga merupakan keterampilan dan kemampuan manusia untuk bergerak secara ekonomis dan sesuai dengan tujuan. Hal ini merupakan dasar permulaan untuk mencapai prestasi yang setinggi-tingginya. Permainan sepak bola menuntut penguasaan teknik yang kompleks.";
   final String text6 =
@@ -51,12 +51,27 @@ class TeknikDasarPage extends StatelessWidget {
                   ),
                   color: Colors.white,
                 ),
-                child: Center(
-                  child: Text(
-                    "Teknik Dasar Sepak Bola",
-                    style: blackFontStyle.copyWith(
-                        fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 0),
+                      child: Text(
+                        'Teknik Dasar Sepak Bola',
+                        style: blackFontStyle.copyWith(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 3),
+                      child: Text(
+                        'sumber gambar : https://www.vlix.id/',
+                        style: greyFontStyle.copyWith(
+                          fontStyle: FontStyle.italic,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 width: double.maxFinite,
                 padding: EdgeInsets.only(
@@ -81,6 +96,18 @@ class TeknikDasarPage extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(16, 10, 16, 0),
               child: Column(
                 children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    child: Text(
+                      "Teknik-teknik dasar yang harus dimiliki siswa dalam mempelajari permainan sepak bola"
+                          .toUpperCase(),
+                      style: blackFontStyle.copyWith(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
                   Text(
                     "$text1\n$text2\n$text3\n$text4\n$text5\n$text6\n$text7\n$text8\n$text9\n$text10\n$text11,",
                     style: greyFontStyle,

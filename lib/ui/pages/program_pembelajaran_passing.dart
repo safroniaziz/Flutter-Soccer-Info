@@ -36,9 +36,9 @@ class ProgramPembelajaranPassing extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(bottom: 0),
                         child: Text(
-                          'Passing',
+                          'Mengoper Bola (Passing)',
                           style: blackFontStyle.copyWith(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ),
                       Padding(
@@ -85,8 +85,8 @@ class ProgramPembelajaranPassing extends StatelessWidget {
                         Text(
                           "PROGRAM PEMBELAJARAN SEPAK BOLA METODE PEMBELAJARAN KOPERATIF TIPE TGT, STAD, dan JIGSAW",
                           style: blackFontStyle.copyWith(
-                            fontSize: 16,
                             fontWeight: FontWeight.bold,
+                            fontSize: 14,
                           ),
                           textAlign: TextAlign.center,
                         ),

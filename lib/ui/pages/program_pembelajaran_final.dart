@@ -1,7 +1,7 @@
 part of 'pages.dart';
 
-class ProgramPembelajaranBallControl extends StatelessWidget {
-  const ProgramPembelajaranBallControl({super.key});
+class ProgramPembelajaranFinal extends StatelessWidget {
+  const ProgramPembelajaranFinal({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(bottom: 0),
                         child: Text(
-                          'Kontrol Bola (Ball Control)',
+                          'Tes Akhir Keterampilan',
                           style: blackFontStyle.copyWith(
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
@@ -44,7 +44,7 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(top: 3),
                         child: Text(
-                          'sumber gambar : https://i.ytimg.com/',
+                          'sumber gambar : https://www.vlix.id/',
                           style: greyFontStyle.copyWith(
                             fontStyle: FontStyle.italic,
                             fontSize: 12,
@@ -66,7 +66,7 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                "assets/ball_control.jpg",
+                "assets/final.jpg",
                 width: double.maxFinite,
                 fit: BoxFit.cover,
               ),
@@ -119,7 +119,7 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(bottom: 10),
                     child: Text(
-                      "20 Menit",
+                      "15 Menit",
                       style: greyFontStyle,
                     ),
                   ),
@@ -194,7 +194,7 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.only(bottom: 10),
                           child: Text(
-                            "40 Menit (control 2 menit/seri, recovery 60 detik/seri)",
+                            "60 Menit",
                             style: greyFontStyle,
                           ),
                         ),
@@ -210,16 +210,31 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
+                              Text(
+                                "Tes keterampilan sepak bola",
+                                style: blackFontStyle.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Container(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
-                                      "\u2022 Siswa passing berpasangan,  kemudian melakukan control bola yang dipimpin langsung guru",
+                                      "\u2022 dribbling test",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Control dengan kaki bagian dalam dan luar, bergantian kaki kiri dan kanan,",
+                                      "\u2022 short passed test",
+                                      style: greyFontStyle.copyWith(),
+                                    ),
+                                    Text(
+                                      "\u2022 shooting at the goal",
+                                      style: greyFontStyle.copyWith(),
+                                    ),
+                                    Text(
+                                      "\u2022 ball control test",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                   ],
@@ -350,11 +365,11 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
-                                      "\u2022 Menyampaikan  tujuan materi belajar",
+                                      "\u2022 Membuat perencanaan tugas belajar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Memberikan pemanasan",
+                                      "\u2022 Menyiapkan tanggapan dan komentar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
@@ -362,15 +377,15 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Menginstruksikan untuk memulai melakukan kegiatan inti",
+                                      "\u2022 Mengkoordinir kegiatan pemanasan",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Membagi kelompok turnamen dengan diurutkan tingkatan kemampuan siswa tinggi ke rendah, melakukan game dan turnamen",
+                                      "\u2022 Memperagakan setiap kriteria penampilan gerakan dalam materi belajar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Melakukan pengawasan siswa dalam belajar",
+                                      "\u2022 Mengkoordinir siswa untuk memulai belajar dengan aba-aba gerakan yang diperagakan oleh guru",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
@@ -411,11 +426,11 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Melakukan permainan game  dan turnamen",
+                                      "\u2022 Membantu/menjelaskan kepada teman satu kelompak atau kelompok lain yang belum paham dengan materi yang diberikan guru",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Berbagi tugas dengan dengan anggota kelpmpok, saling bekerja sama, aktif bertanya, menjelaskan, mengemukakan ide, menanggapi jawaban/pertanyaan dari teman dan sebaginya",
+                                      "\u2022 Melakukan game dan turnamen dengan melakukan gerakan yang benar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
@@ -460,11 +475,11 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
-                                      "\u2022 Membuat perencanan tugas belajar",
+                                      "\u2022 Menyampaikan tujuan materi belajar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Menyiapkan tanggapan dan komentar",
+                                      "\u2022 Memberikan pemanasan",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
@@ -472,15 +487,15 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Mengkoordinir kegiatan pemanasan",
+                                      "\u2022 Menginstruksikan untuk memulai melakukan kegiatan inti",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Memperagakan setiap kriteria penampilan gerakan dalam materi belajar",
+                                      "\u2022 Menginstruksikan siswa untuk melakukan game",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 mengkoordinir siswa untuk memulai belajar dengan aba-aba gerakan yang diperagakan oleh  guru",
+                                      "\u2022 Melakukan pengawasan siswa dalam belajar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
@@ -517,15 +532,15 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Melihat dan memahami bagian-bagian dan urutan di dalam melakukan tugas",
+                                      "\u2022 Melakukan permainan game dengan melakukan gerakan yang benar",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Memberi kesempatan untuk memberi dan menerima umpan balik dengan teman sebaya",
+                                      "\u2022 Memberi kesempatan untuk saling memberi dan menerima umpan balik dengan teman sebaya",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(
-                                      "\u2022 Melakukan permainan game dengan melakukan gerakan yang benar dengan pasangannya",
+                                      "\u2022 Mengamati kemampuan teman, membandingkan, menarik kesimpulan, dan mengkomunikasikan hasil dengan teman pasangannya",
                                       style: greyFontStyle.copyWith(),
                                     ),
                                     Text(

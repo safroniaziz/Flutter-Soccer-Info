@@ -38,7 +38,7 @@ class ProgramPembelajaranDasar extends StatelessWidget {
                         child: Text(
                           'Tes Awal Keterampilan',
                           style: blackFontStyle.copyWith(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ),
                       Padding(
@@ -84,8 +84,8 @@ class ProgramPembelajaranDasar extends StatelessWidget {
                         Text(
                           "PROGRAM PEMBELAJARAN SEPAK BOLA METODE PEMBELAJARAN KOPERATIF TIPE TGT, STAD, dan JIGSAW",
                           style: blackFontStyle.copyWith(
-                            fontSize: 16,
                             fontWeight: FontWeight.bold,
+                            fontSize: 14,
                           ),
                           textAlign: TextAlign.center,
                         ),
