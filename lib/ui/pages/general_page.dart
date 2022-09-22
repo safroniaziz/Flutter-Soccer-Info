@@ -37,17 +37,39 @@ class GeneralPage extends StatelessWidget {
                     color: Colors.white,
                     child: Row(
                       children: [
-                        onBackButtonPressed != null
-                            ? Container(
-                                width: 24,
-                                height: 24,
-                                margin: EdgeInsets.only(right: 26),
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            'assets/back_arrow.png'))),
-                              )
-                            : SizedBox(),
+                        InkWell(
+                          onTap: () {
+                            if (onBackButtonPressed != null) {
+                              Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                  builder: (_) {
+                                    return Dashboard();
+                                  },
+                                ),
+                              );
+                            } else {
+                              Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                  builder: (_) {
+                                    return Dashboard();
+                                  },
+                                ),
+                              );
+                            }
+                          },
+                          child: Container(
+                            width: 24,
+                            height: 24,
+                            margin: EdgeInsets.only(
+                              right: 26,
+                            ),
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/back_arrow.png'),
+                              ),
+                            ),
+                          ),
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,

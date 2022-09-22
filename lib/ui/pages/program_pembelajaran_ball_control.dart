@@ -18,7 +18,18 @@ class ProgramPembelajaranBallControl extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.black12,
               ),
-              child: Image.asset('assets/back_arrow_white.png'),
+              child: InkWell(
+                child: Image.asset('assets/back_arrow_white.png'),
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (_) {
+                        return HomeProgram();
+                      },
+                    ),
+                  );
+                },
+              ),
             ),
             bottom: PreferredSize(
               preferredSize: Size.fromHeight(20),

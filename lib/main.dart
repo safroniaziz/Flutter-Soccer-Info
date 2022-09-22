@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'ui/pages/pages.dart';
-import 'ui/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Pembahasan(),
+      home: SplashScreenPage(),
     );
   }
 }

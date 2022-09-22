@@ -1,9 +1,28 @@
-import 'package:flutter/material.dart';
-import 'package:supercharged/supercharged.dart';
-import 'package:soccer_info/shared/shared.dart';
+part of 'pages.dart';
 
-class SplashPage extends StatelessWidget {
-  const SplashPage({super.key});
+class SplashScreenPage extends StatefulWidget {
+  const SplashScreenPage({Key? key}) : super(key: key);
+  @override
+  _SplashScreenPageState createState() => _SplashScreenPageState();
+}
+
+class _SplashScreenPageState extends State<SplashScreenPage> {
+  @override
+  void initState() {
+    super.initState();
+    openSplashScreen();
+  }
+
+  openSplashScreen() async {
+    //bisa diganti beberapa detik sesuai keinginan
+    var durasiSplash = const Duration(seconds: 3);
+    return Timer(durasiSplash, () {
+      //pindah ke halaman home
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) {
+        return Dashboard();
+      }));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,32 +41,27 @@ class SplashPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 70, bottom: 20),
+              margin: EdgeInsets.only(top: 20),
+              child: CircularProgressIndicator.adaptive(
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.yellow),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 20, bottom: 20),
               child: Text(
                 "SOCCER INFO",
                 style: blackFontStyle.copyWith(
                     fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
-            Text(
-              "Teknik dasar dan pembelajaran\npermainan sepak bola",
-              style: greyFontStyle.copyWith(
-                  fontSize: 16, fontWeight: FontWeight.w300),
-              textAlign: TextAlign.center,
-            ),
             Container(
-              width: 250,
-              height: 46,
-              margin: EdgeInsets.only(top: 70, bottom: 16),
-              child: ElevatedButton(
-                  child: Text(
-                    "Ayo Mulai",
-                    style: whiteFontStyle.copyWith(fontSize: 16),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: mainColor, // background
-                  ),
-                  onPressed: () {}),
+              margin: EdgeInsets.only(bottom: 5),
+              child: Text(
+                "Teknik dasar dan pembelajaran\npermainan sepak bola",
+                style: greyFontStyle.copyWith(
+                    fontSize: 16, fontWeight: FontWeight.w300),
+                textAlign: TextAlign.center,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

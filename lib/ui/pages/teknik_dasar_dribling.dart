@@ -14,7 +14,7 @@ class TeknikDasarDribling extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            toolbarHeight: 70,
+            toolbarHeight: 90,
             title: Container(
               padding: EdgeInsets.all(3),
               width: 30,
@@ -23,7 +23,18 @@ class TeknikDasarDribling extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.black12,
               ),
-              child: Image.asset('assets/back_arrow_white.png'),
+              child: InkWell(
+                child: Image.asset('assets/back_arrow_white.png'),
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (_) {
+                        return Home();
+                      },
+                    ),
+                  );
+                },
+              ),
             ),
             bottom: PreferredSize(
               preferredSize: Size.fromHeight(20),
